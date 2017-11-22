@@ -10,10 +10,10 @@ import UIKit
 
 class LeftSlideMenuViewController: UIViewController {
 
+    @IBOutlet weak var menuView: UIView!
+    var selectMenu = true
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,7 +21,17 @@ class LeftSlideMenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func hideShowSlideMenu(_ sender: UIBarButtonItem) {
+        if (selectMenu) {
+            UIView.animate(withDuration: 3, animations: {self.menuView.frame.origin.x -= 300
+                
+            })
+        } else {
+            UIView.animate(withDuration: 3, animations: {self.menuView.frame.origin.x += 300})
+        }
+        selectMenu = !selectMenu
+    }
+    
     /*
     // MARK: - Navigation
 
