@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7E4D68601FC2C3DC005F52B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D685F1FC2C3DC005F52B8 /* AppDelegate.swift */; };
-		7E4D68621FC2C3DC005F52B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D68611FC2C3DC005F52B8 /* ViewController.swift */; };
 		7E4D68651FC2C3DC005F52B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D68631FC2C3DC005F52B8 /* Main.storyboard */; };
 		7E4D68671FC2C3DC005F52B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D68661FC2C3DC005F52B8 /* Assets.xcassets */; };
 		7E4D686A1FC2C3DC005F52B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4D68681FC2C3DC005F52B8 /* LaunchScreen.storyboard */; };
-		7E4D68721FC2D5A6005F52B8 /* LeftSlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D68711FC2D5A6005F52B8 /* LeftSlideMenuViewController.swift */; };
 		7E4D68741FC2D7B5005F52B8 /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D68731FC2D7B5005F52B8 /* SlideMenuViewController.swift */; };
 		7E55E4C61FC416CF00856120 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E55E4C51FC416CF00856120 /* MenuTableViewController.swift */; };
 		7E55E4C81FC416E200856120 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E55E4C71FC416E200856120 /* MainViewController.swift */; };
@@ -21,12 +19,10 @@
 /* Begin PBXFileReference section */
 		7E4D685C1FC2C3DC005F52B8 /* DemoSlideMenu2times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoSlideMenu2times.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4D685F1FC2C3DC005F52B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E4D68611FC2C3DC005F52B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E4D68641FC2C3DC005F52B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E4D68661FC2C3DC005F52B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E4D68691FC2C3DC005F52B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E4D686B1FC2C3DC005F52B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7E4D68711FC2D5A6005F52B8 /* LeftSlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSlideMenuViewController.swift; sourceTree = "<group>"; };
 		7E4D68731FC2D7B5005F52B8 /* SlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
 		7E55E4C51FC416CF00856120 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		7E55E4C71FC416E200856120 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -63,8 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				7E4D685F1FC2C3DC005F52B8 /* AppDelegate.swift */,
-				7E4D68611FC2C3DC005F52B8 /* ViewController.swift */,
-				7E4D68711FC2D5A6005F52B8 /* LeftSlideMenuViewController.swift */,
 				7E4D68731FC2D7B5005F52B8 /* SlideMenuViewController.swift */,
 				7E55E4C71FC416E200856120 /* MainViewController.swift */,
 				7E55E4C51FC416CF00856120 /* MenuTableViewController.swift */,
@@ -149,10 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E4D68741FC2D7B5005F52B8 /* SlideMenuViewController.swift in Sources */,
-				7E4D68721FC2D5A6005F52B8 /* LeftSlideMenuViewController.swift in Sources */,
 				7E55E4C61FC416CF00856120 /* MenuTableViewController.swift in Sources */,
 				7E55E4C81FC416E200856120 /* MainViewController.swift in Sources */,
-				7E4D68621FC2C3DC005F52B8 /* ViewController.swift in Sources */,
 				7E4D68601FC2C3DC005F52B8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

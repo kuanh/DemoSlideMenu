@@ -10,67 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Left Slide Menu View Controller-->
-        <scene sceneID="9La-PA-32R">
-            <objects>
-                <viewController id="tz0-G1-2Gi" customClass="LeftSlideMenuViewController" customModule="DemoSlideMenu2times" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hN0-2O-IR3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sTw-wB-RDc">
-                                <rect key="frame" x="0.0" y="64" width="300" height="603"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DUu-BM-9Pj">
-                                        <rect key="frame" x="10" y="10" width="90" height="106"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5K-7T-dpo" userLabel="Red">
-                                                <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
-                                                <state key="normal" title="Red"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXS-i3-D7p" userLabel="Blue">
-                                                <rect key="frame" x="0.0" y="38" width="90" height="30"/>
-                                                <state key="normal" title="Blue"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p47-V2-a0W" userLabel="Green">
-                                                <rect key="frame" x="0.0" y="76" width="90" height="30"/>
-                                                <state key="normal" title="Green"/>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.97955796630000003" green="0.69865953000000003" blue="0.71640932040000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="DUu-BM-9Pj" firstAttribute="leading" secondItem="sTw-wB-RDc" secondAttribute="leading" constant="10" id="MYz-Nz-GgF"/>
-                                    <constraint firstAttribute="width" constant="300" id="jW5-vz-OT0"/>
-                                    <constraint firstAttribute="trailing" secondItem="DUu-BM-9Pj" secondAttribute="trailing" constant="200" id="r2f-Ro-o0a"/>
-                                    <constraint firstItem="DUu-BM-9Pj" firstAttribute="top" secondItem="sTw-wB-RDc" secondAttribute="top" constant="10" id="x9o-Yk-fo4"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="sTw-wB-RDc" firstAttribute="top" secondItem="9zF-N5-TRz" secondAttribute="top" id="7Hv-O8-ePm"/>
-                            <constraint firstItem="sTw-wB-RDc" firstAttribute="leading" secondItem="9zF-N5-TRz" secondAttribute="leading" id="HgA-HE-E3s"/>
-                            <constraint firstItem="9zF-N5-TRz" firstAttribute="bottom" secondItem="sTw-wB-RDc" secondAttribute="bottom" id="r5B-u6-0Uo"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="9zF-N5-TRz"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="9Lw-uk-iW0">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="dyQ-2i-JAU">
-                            <connections>
-                                <action selector="hideShowSlideMenu:" destination="tz0-G1-2Gi" id="gfP-WH-Tbp"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="menuView" destination="sTw-wB-RDc" id="MzO-0S-F6d"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="G6b-3T-L4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="519" y="-31"/>
-        </scene>
         <!--Slide Menu View Controller-->
         <scene sceneID="w3f-ac-6kb">
             <objects>
@@ -158,24 +97,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5MB-90-O38" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1733" y="820"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="6k1-9j-aLa">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VDu-IO-OuY" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qoc-uV-GlC">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="tz0-G1-2Gi" kind="relationship" relationship="rootViewController" id="2qr-Y7-f3y"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jb7-qw-pHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-225" y="-31"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="eVG-eR-EzZ">
